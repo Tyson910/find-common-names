@@ -1,48 +1,69 @@
-# Svelte + TS + Vite
+<div align="center">
 
-This template should help get you started developing with Svelte and TypeScript in Vite.
+# Portmanteau Name Generator
 
-## Recommended IDE Setup
+Generate a group of Portmanteaus with one click!
 
-[VS Code](https://code.visualstudio.com/) + [Svelte](https://marketplace.visualstudio.com/items?itemName=svelte.svelte-vscode).
+_Loved the project? Show your love to the developer by starring this repo._
 
-## Need an official Svelte framework?
+</div>
 
-Check out [SvelteKit](https://github.com/sveltejs/kit#readme), which is also powered by Vite. Deploy anywhere with its serverless-first approach and adapt to various platforms, with out of the box support for TypeScript, SCSS, and Less, and easily-added support for mdsvex, GraphQL, PostCSS, Tailwind CSS, and more.
+---
 
-## Technical considerations
+This project is aimed to generate a list of Portmanteaus. Wait! What is a "Portmanteau"? Well according to Dictionary.com, a [Portmanteau](https://www.dictionary.com/browse/portmanteau) is a word blending the sounds and combining the meanings of two others, for example motel (from ‘motor’ and ‘hotel’), brunch (from ‘breakfast’ and ‘lunch’), or Bennifer ('Ben Afflek' and 'Jennifer Lopez'). With the click of a button, this app will generate a list of name combinations is auto-generated which you can then view by length.
 
-**Why use this over SvelteKit?**
+---
 
-- It brings its own routing solution which might not be preferable for some users.
-- It is first and foremost a framework that just happens to use Vite under the hood, not a Vite app.
-  `vite dev` and `vite build` wouldn't work in a SvelteKit environment, for example.
+## 🧑🏿‍💻 User Story (As I User I Want to...)
 
-This template contains as little as possible to get started with Vite + TypeScript + Svelte, while taking into account the developer experience with regards to HMR and intellisense. It demonstrates capabilities on par with the other `create-vite` templates and is a good starting point for beginners dipping their toes into a Vite + Svelte project.
+- [x] Enter two different names
+- [x] Get the number of portmanteaus created between the two words
+- [x] See a generated list of all possible letter combinations
+- [x] Set a minimum length for generated Portmanteaus
+- [x] Set a maximum length for generated Portmanteaus
+- [x] Organized in order from shortest to longest
+- [x] Group combinations by letter lengths
 
-Should you later need the extended capabilities and extensibility provided by SvelteKit, the template has been structured similarly to SvelteKit so that it is easy to migrate.
+---
 
-**Why `global.d.ts` instead of `compilerOptions.types` inside `jsconfig.json` or `tsconfig.json`?**
+## 🚀 Getting started
 
-Setting `compilerOptions.types` shuts out all other types not explicitly listed in the configuration. Using triple-slash references keeps the default TypeScript setting of accepting type information from the entire workspace, while also adding `svelte` and `vite/client` type information.
+This project is already deployed on <a href="#" target="_blank"></a>
 
-**Why include `.vscode/extensions.json`?**
+Instructions for local deployment are given below:
 
-Other templates indirectly recommend extensions via the README, but this file allows VS Code to prompt the user to install the recommended extension upon opening the project.
+1. Clone the repository
 
-**Why enable `allowJs` in the TS template?**
-
-While `allowJs: false` would indeed prevent the use of `.js` files in the project, it does not prevent the use of JavaScript syntax in `.svelte` files. In addition, it would force `checkJs: false`, bringing the worst of both worlds: not being able to guarantee the entire codebase is TypeScript, and also having worse typechecking for the existing JavaScript. In addition, there are valid use cases in which a mixed codebase may be relevant.
-
-**Why is HMR not preserving my local component state?**
-
-HMR state preservation comes with a number of gotchas! It has been disabled by default in both `svelte-hmr` and `@sveltejs/vite-plugin-svelte` due to its often surprising behavior. You can read the details [here](https://github.com/rixo/svelte-hmr#svelte-hmr).
-
-If you have state that's important to retain within a component, consider creating an external store which would not be replaced by HMR.
-
-```ts
-// store.ts
-// An extremely simple external store
-import { writable } from 'svelte/store'
-export default writable(0)
 ```
+git clone git@github.com:Tyson910/find-common-names.git
+```
+
+2. Enter the project directory
+
+```
+cd find-common-names
+```
+
+3. Install dependencies
+
+```
+npm i
+```
+
+4. Start local dev server
+
+```
+npm run dev
+```
+
+5. View local deployment at [http://localhost:5173](http://localhost:5173)
+
+---
+
+## :heart: Supporting the project
+
+A simple star to this project repo is enough to keep me motivated on this project for days. If you find your self very much excited with this project let me know with a tweet.
+
+Thanks!
+
+Contributions are always welcome!

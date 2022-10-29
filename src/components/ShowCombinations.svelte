@@ -1,11 +1,17 @@
 <script lang="ts">
   export let groupOfStrings: string[][] = null;
+  export let totalCombos = 0;
 </script>
 
+<p
+  class="mt-32 text-3xl capitalize text-gray-500 p-5 font-light dark:border-gray-700"
+>
+  Generated <em class="italic">{totalCombos}</em> different combinations
+</p>
 {#each groupOfStrings as strGroup, i}
   {#if strGroup.length > 0}
     <details
-      class="pxn-8 mx-auto w-max my-20 pt-5 font-bold text-3xl capitalize bg-blue-100 dark:bg-gray-800 text-blue-600 dark:text-white border rounded-md border-b-0 border-gray-200 dark:border-gray-700"
+      class="mx-auto w-max mt-14 mb-20 pt-5 font-bold text-3xl capitalize bg-gray-800 text-white border rounded-md border-b-0 border-gray-700"
     >
       <summary
         class="cursor-pointer px-8 pt-2 pb-8 flex flex-row gap-x-6 items-center justify-center"
@@ -27,7 +33,7 @@
       </summary>
       {#each strGroup as word, i (word)}
         <p
-          class="text-3xl capitalize cursor-default text-gray-500 dark:text-gray-400 p-5 font-light border border-b-0 border-gray-200 dark:border-gray-700 dark:bg-gray-900"
+          class="text-3xl capitalize cursor-default text-gray-100 p-5 font-light border border-b-0 border-gray-700 bg-gray-900"
         >
           {word}
         </p>

@@ -3,17 +3,17 @@
   import { getPossibleCombinations } from "./utils/Permuations";
   let name1 = "";
   let name2 = "";
-  // remove any spaces from name combo
+  /**  Combine both name1 and name2 (remove any spaces from name combo) */
   $: nameCombo = name1.replaceAll(/\s/g, "") + name2.replaceAll(/\s/g, "");
   let minLength = 1;
-  $: maxLength = nameCombo.length;
+  $: maxLength = nameCombo.length || 1;
   let namePermutations: {
     allPossibleCombinations: string[];
     strGroupedByLength: string[][];
   } = null;
 </script>
 
-<main class="text-3xl md:text-5xl">
+<main class="text-3xl md:text-5xl py-20">
   <div class="w-max mx-auto mb-10">
     {#if nameCombo.length > 0}
       <div class="flex flex-row">
@@ -82,6 +82,7 @@
         type="number"
         class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
         id="max_length"
+        min={minLength}
         bind:value={maxLength}
         required
       />
@@ -98,7 +99,10 @@
   </form>
 
   {#if namePermutations?.strGroupedByLength}
-    <ShowCombinations groupOfStrings={namePermutations.strGroupedByLength} />
+    <ShowCombinations
+      groupOfStrings={namePermutations.strGroupedByLength}
+      totalCombos={namePermutations.allPossibleCombinations.length}
+    />
   {/if}
 </main>
 

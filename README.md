@@ -10,7 +10,7 @@ _Loved the project? Show your love to the developer by starring this repo._
 
 ---
 
-This project is aimed to generate a list of Portmanteaus. Wait! What is a "Portmanteau"? Well according to Dictionary.com, a [Portmanteau](https://www.dictionary.com/browse/portmanteau) is a word blending the sounds and combining the meanings of two others, for example motel (from ‘motor’ and ‘hotel’), brunch (from ‘breakfast’ and ‘lunch’), or Bennifer ('Ben Afflek' and 'Jennifer Lopez'). With the click of a button, this app will generate a list of name combinations is auto-generated which you can then view by length.
+This project is aimed to generate a list of Portmanteaus. Wait! What is a "Portmanteau"? Well according to Dictionary.com, a [Portmanteau](https://www.dictionary.com/browse/portmanteau) is a word blending the sounds and combining the meanings of two others, for example motel (from ‘motor’ and ‘hotel’), brunch (from ‘breakfast’ and ‘lunch’), or Bennifer ('Ben Affleck' and 'Jennifer Lopez'). With the click of a button, this app will generate a list of name combinations is auto-generated which you can then view by length.
 
 ---
 

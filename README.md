@@ -28,7 +28,7 @@ This project is aimed to generate a list of Portmanteaus. Wait! What is a "Portm
 
 ## 🚀 Getting started
 
-This project is already deployed on <a href="#" target="_blank"></a>
+This project is already deployed on <a href="<https://find-common-names.vercel.app/>" target="_blank">https://find-common-names.vercel.app/</a>
 
 Instructions for local deployment are given below:
 

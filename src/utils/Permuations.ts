@@ -1,4 +1,7 @@
-/**  Generating all possible combos for a given string sorted by length */
+/**  Generating all possible combos for a given string sorted by length
+ * 
+ * - TODO: add test for this function
+ */
 export function getPossibleCombinations(
   str: string,
   { min = 0, max = str.length }: { min?: number; max?: number },
